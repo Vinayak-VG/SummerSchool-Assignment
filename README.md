@@ -4,4 +4,4 @@ GitHub Repo for students to fork and create a pull request for the assignment of
 ---
 
 
-Please create a folder named  **"Name_Rollno"** in which you have all the contents of whatever submission you wanna make
+Please create a folder named  **"Name_Rollno"** in which you have all the contents of whatever submission you wanna make and then make a pull request
