@@ -1,7 +1,10 @@
-# Author: Sai Shashank GP
-# Date last modified: 07-07-2021
-# Purpose: To find a pair of elements (indices of the two numbers) from a given array whose sum equals a specific target number.
- 
+'''
+Author: Sai Shashank GP
+Date last modified: 07-07-2021
+Purpose: To find a pair of elements (indices of the two numbers) from a given array whose sum equals a specific target number.
+Sample input: 10 20 10 40 50 60 70
+Sample ouput: {1: [0, 3], 2: [2, 3], 3: [3, 0], 4: [3, 2]}
+'''
 
 numbers = list(map(int, input("Enter your list here: ").strip().split()))    # Taking the list as input from user
 targetnumber = int(input("Enter your target number here: "))                 # Taking the target number as input from user
