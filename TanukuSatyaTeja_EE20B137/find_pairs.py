@@ -3,15 +3,31 @@ t_sum = int(input("Please enter target sum: "))
 
 num = [int(number) for number in input("Enter the numbers to be checked (seperated by space) : ").split()]
 
-n = len(num)
-k = 1
-pairs = {}
+class find_pairs :
 
-for i in range (0, n):
-    for j in range (0,n):
-        if(num[i] + num[j] == t_sum):
-            pairs[k] = [i, j]
-            k +=1
+    pairs = {}
+
+    def __init__(self,array,sum):
+        n = len(array)
+        k = 1
+        
+        for i in range (0, n):
+            for j in range (0,n):
+                if(array[i] + array[j] == sum):
+                    self.pairs[k] = [i, j]
+                    k +=1
+
+        self.numbers = array
+        self.target_sum = sum
+
+    def show(self):
+        print (self.pairs)
 
 
-print (pairs)
+pair = find_pairs(num,t_sum)
+
+pair.show()
+
+
+
+
