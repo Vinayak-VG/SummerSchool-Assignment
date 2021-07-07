@@ -6,8 +6,17 @@ Sample input: 10 20 10 40 50 60 70
 Sample ouput: {1: [0, 3], 2: [2, 3], 3: [3, 0], 4: [3, 2]}
 '''
 
-numbers = list(map(int, input("Enter your list here: ").strip().split()))    # Taking the list as input from user
-targetnumber = int(input("Enter your target number here: "))                 # Taking the target number as input from user
+# importing useful libraries
+
+import numpy as np
+import random
+
+# creating a random numbers list and target number
+
+mean = uniform(0, 10)
+std_dev = uniform(0, 10)
+numbers = list((np.random.rand(100)*std_dev)+mean)    
+targetnumber = uniform(0, 100)        
 
 
 def Checkcondition(N, T):
