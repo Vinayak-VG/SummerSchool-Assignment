@@ -1,0 +1,40 @@
+#problem-1
+
+import numpy as np
+
+def cross(y, y_p):
+    return(np.sum(-1/100 * (y * np.log2(y_p) + (1 - y) * np.log2(1 - y_p))))
+
+y_p = np.random.uniform(0,1, size = 100)
+y = np.random.randint(2, size = 100)
+print(cross(y, y_p))
+
+#problem-2
+
+import numpy as np
+
+class xyz:
+    def _init_(self, arr, Tsum):
+        self.arr = np.array(arr)
+        self.Tsum = Tsum
+    def dik(self):
+        dik = {}
+        k = 0
+        values = []
+        tmp = self.arr
+        for _ in range(len(self.arr)):
+            tmp = self.arr[_] + self.arr
+            res = np.where(tmp == self.Tsum)
+            if len(res[0]) != 0:
+                for i in range(len(res[0])):
+                    if _ != res[0][i]:
+                        k += 1
+                        dik[k] = [_, res[0][i]]
+        print(dik)
+
+
+
+arr = list(map(int, input().split()))
+Tsum = int(input())
+p = xyz(arr, Tsum)
+p.dik()
