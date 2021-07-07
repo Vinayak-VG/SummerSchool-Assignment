@@ -1,5 +1,5 @@
 # Author: Sai Shashank GP
-# Date last modified: 06-07-2021
+# Date last modified: 07-07-2021
 # Purpose: Using Cross-Entropy function for given inputs
 
 # importing useful libraries
