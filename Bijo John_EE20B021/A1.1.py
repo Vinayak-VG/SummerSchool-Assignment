@@ -1,7 +1,6 @@
 import numpy as np
 from math import log
 n = 100
-import math
 
 y = np.random.randint(2, size=n)
 y_hat = np.random.rand(n)
