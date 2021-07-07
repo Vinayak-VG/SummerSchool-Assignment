@@ -3,7 +3,7 @@ import math
 n = input("Size : ")
 n = int(n)
 if n == 0:
-    print("invalid input")
+    print("Invalid input")
 else:
 
     x=np.random.rand(n)
