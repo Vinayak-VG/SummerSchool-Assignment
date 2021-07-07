@@ -1,0 +1,17 @@
+'''
+assgn 1
+'''
+import random
+import math
+import numpy 
+n=int(input())
+i=1
+o=0.0
+while(i<=n):
+
+    ycap=random.random();
+    y=random.randint(0,1);
+    o+=y*numpy.log(ycap)+(1-y)*numpy.log(1-ycap)
+    i=i+1
+
+print(-1*o/n);
