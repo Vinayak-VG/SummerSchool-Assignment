@@ -2,14 +2,10 @@ import math
 
 import numpy as np
 
-dimension = 100
+dimension = 10
 y_hat = np.random.rand(dimension)
 y = np.random.randint(0, 2, dimension)
 
-summation = 0.0
-for i in range(dimension):
-    summation += ((y[i] * math.log2(y_hat[i])) + ((1 - y[i]) * math.log2(1 - y_hat[i])))
-
-o = -summation * (1 / dimension)
+o = np.sum(-(1/dimension)*((y * np.log2(y_hat)) + ((1 - y) * np.log2(1 - y_hat))))
 
 print(o)
