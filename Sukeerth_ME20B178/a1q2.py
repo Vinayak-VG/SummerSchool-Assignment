@@ -16,6 +16,7 @@ class pair_finder:
 
     def find_pairs(self):
         
+        ind = {}
         ans = {}
         cou = 0
         
@@ -27,13 +28,15 @@ class pair_finder:
                     continue
                 
                 if(self.numbers[i] + self.numbers[j] == self.target):
+                    ind[cou + 1] = [i, j]
                     ans[cou + 1] = [self.numbers[i], self.numbers[j]]
                     cou = cou + 1
         
         print("Numbers in the array =", self.numbers)
         print("Target sum =", self.target)
         print("Number of pairs found =", cou)
-        print("Dictionary of all the pairs =", ans)
+        print("Dictionary of all the pairs (Indexes) =", ind)
+        print("Dictionary of all the pairs (Values) =", ans)
         
         if(cou != 0):
             print("\nNote: Each pair is intentionally repeated (Order is changed).")
