@@ -17,7 +17,7 @@ First, [fork the repository](https://docs.github.com/en/github/getting-started-w
 </a>
 
 Your fork will have its own location, which we will call `PATH_TO_YOUR_FORK`.<br>
-Next, [clone the forked repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) and create a branch for your folder, which here we will call <my_folder>:
+Next, [clone the forked repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) and create a branch for your folder(`git branch my_folder`), which here we will call <my_folder>:
 ```bash
 git clone $PATH_TO_YOUR_FORK
 cd SummerSchool-Assignment
