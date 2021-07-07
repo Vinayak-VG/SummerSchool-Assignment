@@ -1,4 +1,3 @@
-
 # Author: Sai Shashank GP
 # Date last modified: 06-07-2021
 # Purpose: To find a pair of elements (indices of the two numbers) from a given array whose sum equals a specific target number.
@@ -17,9 +16,7 @@ def Checkcondition(N, T):
     finallist = []
     len_N = len(N)
     for i in range(len_N):
-        range_req = list(range(len_N))
-        range_req.pop(i)
-        for j in range_req:
+        for j in range(len(N)):
             if N[i]+N[j] == T:
                 answer = [i, j]
                 finallist.append(answer)
@@ -44,5 +41,3 @@ class FindTargetIndices:
 
 answer_2 = FindTargetIndices()
 answer_2.show()
-
-

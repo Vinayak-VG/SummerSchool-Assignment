@@ -6,39 +6,17 @@
 
 import numpy as np
 
-# defining required functions
+# Taking input from user for no.of elements in y and y_cap
 
-def Oi(y, y_cap):
-    '''
-    
-    This function finds the summation terms list for each element of y and y_cap
-    
-    '''
-    O_list = []
-    length = len(y)
-    for i in range(length):
-        val = (y[i]*np.log(y_cap[i])) + ((1-y[i])*np.log(1-y_cap[i]))
-        O_list.append(val)
-    return O_list
-
-def sum_list(l):
-    '''
-    
-    This function sums up the terms in a list
-    
-    '''
-    s = 0
-    for val in l:
-        s += val
-    return s
+n = int(input("Enter your n here: "))
 
 # writing inputs for Cross-Entropy function as lists
 
-Y = list(np.random.rand(100))
-y = list(np.random.randint(0, 2, 100))
+Y = np.random.rand(n)
+y = np.random.randint(0, 2, n)
+O_arr = -1*((y*(np.log2(Y)))+((1-y)*(np.log2(1-Y))))
+answer_1 = np.mean(O_arr)
 
 # printing answer
 
-answerlist = Oi(y, Y)
-answer_1 = -0.01*sum_list(answerlist)
 print(answer_1)
