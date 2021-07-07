@@ -9,10 +9,11 @@ Sample output: 1.375263
 # importing useful libraries
 
 import numpy as np
+import random
 
-# Taking input from user for no.of elements in y and y_cap
+# Assigning n to a random positive integer
 
-n = int(input("Enter your n here: "))
+n = random.randint(1, 1000)
 
 # writing inputs for Cross-Entropy function as lists
 
