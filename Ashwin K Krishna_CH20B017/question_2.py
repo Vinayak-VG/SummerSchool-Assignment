@@ -8,29 +8,31 @@ Original file is located at
 """
 
 import numpy as np
-class X:
+class CheckArray:
   z={}
   def __init__(self,arr,target):
     self.arr=arr
     self.target=target
 
-  def f1(self):
+  def checker(self):
     k=1
     a = self.arr
     t = self.target
     for i in range(len(a)):
       for j in range(len(a)):
-        if i!=j and (a[i]+a[j]) == t:
+        if (a[i]+a[j]) == t:
           self.z[k]=[i,j]
           k=k+1
     print(self.z)
 
 
-x2=input()
-y=int(input())
-x1=x2.split()
+arr = input()
+target = int(input())
+x1 = arr.split()
 for i in range(len(x1)):
   x1[i]=int(x1[i])
-x=np.array(x1)
-c=X(x,y)
-z = c.f1()
+
+x = np.array(x1)
+c = CheckArray(x,target)
+z = c.checker()
+
