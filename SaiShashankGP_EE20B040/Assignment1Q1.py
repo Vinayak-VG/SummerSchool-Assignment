@@ -1,7 +1,8 @@
 # Author: Sai Shashank GP
 # Date last modified: 07-07-2021
 # Purpose: Using Cross-Entropy function for given inputs
-
+# Sample input: 100
+# Sample output: 1.375263
 # importing useful libraries
 
 import numpy as np
