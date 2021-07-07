@@ -1,5 +1,5 @@
 # Author: Sai Shashank GP
-# Date last modified: 06-07-2021
+# Date last modified: 07-07-2021
 # Purpose: To find a pair of elements (indices of the two numbers) from a given array whose sum equals a specific target number.
  
 
