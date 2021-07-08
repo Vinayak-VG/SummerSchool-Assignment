@@ -15,10 +15,6 @@ class Solver:
 
 		return dict(zip(range(1, len(solution) + 1), solution))
 
-# input is assumed to be of the following format
-#
-# <target>
-# <array[0]> <array[1]> <array[2]> ... <array[n - 1]>
 
 input_target = int(input())
 
