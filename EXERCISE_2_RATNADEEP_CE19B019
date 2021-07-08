@@ -1,0 +1,37 @@
+reated on Wed Jul  7 21:34:47 2021
+
+@author: RATNADEEP CE19B019
+"""
+n=int(input('Enter the size of list:'))
+lst=[]
+print('Now enter elements one by one')
+for i in range(0,n):
+    element=int(input())
+    lst.append(element)
+    if i==(n-1):
+        target=int(input('Enter the target:\n'))
+a=lst
+print('Entered list is',a)
+
+
+        
+class dict_indices:
+    def __init__(self, size = target, topping_list = []):
+        self.__size = target
+        self.__topping_list = topping_list
+        
+    def _get_dict_(self):
+        result_dict={}
+        k=1
+        for i in range(len(self.__topping_list)):
+            j=i
+            for j in range(len(self.__topping_list)):
+                if (self.__topping_list[i]+self.__topping_list[j]==self.__size):
+                    result_dict[k]=[i,j]
+                    k=k+1
+            if (i==len(self.__topping_list)-1):
+                return(result_dict)
+            
+Xmple= dict_indices(target, a)
+result=Xmple._get_dict_()
+print(result)
