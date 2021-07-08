@@ -1,31 +1,15 @@
-#!/usr/bin/python3
-
-class Solver:
-	def __init__(self):
-		self.array = []
-		self.target = 0
-
-	def __init__(self, input_array, input_target):
-		self.array = input_array
-		self.target = input_target
-
-	def solve(self):
-		start, end = 0, len(self.array) - 1
-
-		solution = [[i, j] for i in range(len(self.array)) for j in range(len(self.array)) if self.array[i] + self.array[j] == self.target]
-
-		return dict(zip(range(1, len(solution) + 1), solution))
-
-# input is assumed to be of the following format
-#
-# <target>
-# <array[0]> <array[1]> <array[2]> ... <array[n - 1]>
-
-input_target = int(input())
-
-input_str_array = input().split(' ')
-input_array = [int(input_element) for input_element in input_str_array]
-
-solver = Solver(input_array, input_target)
-
-print(solver.solve())
+class py_solution:
+def __init__(self, nums, target):
+self.lookup = {}
+c = 1
+for i in range(len(nums)):
+for j in range(len(nums)):
+if nums[i] + nums[j] == target:
+self.lookup[c] = [i, j]
+c = c + 1
+def show(self):
+print(self.lookup)
+list_ = [10,20,10,40,50,60,70]
+target = 50
+answer = py_solution(list_, target)
+answer.show()
