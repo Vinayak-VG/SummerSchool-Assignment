@@ -1,0 +1,53 @@
+#first question
+import numpy as np
+import math
+n=5
+sum=0
+ycap=np.random.rand(n)
+y=np.random.randint(0,2,n)
+#print(y,ycap)
+for i in range(0,n,1):
+    sum = sum - (y[i]*math.log2(ycap[i])+(1-y[i])*math.log2(1-ycap[i]))/n 
+
+o=sum
+print(o)
+
+
+
+
+#second question
+class paircheck:
+
+
+  def _init_(self,inputarr,target):
+
+    self.inputarr = inputarr
+    self.target = target
+
+  def show(self):  
+      
+    output = {} #creating dictionary
+    n=1
+
+    for i in range(0,len(inputarr)):
+      for j in range(0,len(inputarr)):
+        
+        if(inputarr[i]+inputarr[j] == target):
+           output[n] = [i,j]
+           n = n + 1
+    return output
+
+
+inputarr = []
+print('Target')
+target = int(input())
+print('Number of inputs')
+numinp = int(input())
+print('Elements')
+for k in range(numinp):
+   element = int(input())
+   inputarr.append(element)
+
+ans = paircheck(inputarr,target)
+ans.show()
+print('output:',ans.show())
