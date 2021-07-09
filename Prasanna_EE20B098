@@ -1,0 +1,9 @@
+import numpy as np
+
+n =100
+O=0.
+y = np.random.randint(0, 2, n)
+y_cap = np.random.rand(n)
+for i in range(0,n,1):
+ O-=(y[i] * np.log2(y_cap[i]) + (1 - y[i]) * np.log2(1 - y_cap)[i])/n
+print(O)
